@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
 import { reactionAdded } from "./postsSlice";
 
@@ -9,7 +10,6 @@ const reactionEmoji = {
   coffee: "☕",
 };
 
-// eslint-disable-next-line react/prop-types
 const ReactionButtons = ({ post }) => {
   const dispatch = useDispatch();
   const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => (

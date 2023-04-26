@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
 import { postDelete } from "./postsSlice";
 
-// eslint-disable-next-line react/prop-types
 const DeleteButton = ({ post }) => {
   const dispatch = useDispatch();
   return (
